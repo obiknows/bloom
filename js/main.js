@@ -13,34 +13,36 @@
 	'use strict';
 
 	var support = { transitions: Modernizr.csstransitions },
-		// transition end event name
-		transEndEventNames = { 'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend' },
-		transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
-		onEndTransition = function( el, callback ) {
-			var onEndCallbackFn = function( ev ) {
-				if( support.transitions ) {
-					if( ev.target != this ) return;
-					this.removeEventListener( transEndEventName, onEndCallbackFn );
-				}
-				if( callback && typeof callback === 'function' ) { callback.call(this); }
-			};
-			if( support.transitions ) {
-				el.addEventListener( transEndEventName, onEndCallbackFn );
-			}
-			else {
-				onEndCallbackFn();
-			}
-		},
-		// the pages wrapper
-		stack = document.querySelector('.pages-stack'),
-		// the page elements
-		pages = [].slice.call(stack.children),
-		// total number of page elements
-		pagesTotal = pages.length,
-		// index of current page
-		current = 0,
-		// menu button
-		menuCtrl = document.querySelector('button.menu-button'),
+    // transition end event name
+    transEndEventNames = { WebkitTransition: "webkitTransitionEnd", MozTransition: "transitionend", OTransition: "oTransitionEnd", msTransition: "MSTransitionEnd", transition: "transitionend" },
+    transEndEventName = transEndEventNames[Modernizr.prefixed("transition")],
+    onEndTransition = function(el, callback) {
+      var onEndCallbackFn = function(ev) {
+        if (support.transitions) {
+          if (ev.target != this) return;
+          this.removeEventListener(transEndEventName, onEndCallbackFn);
+        }
+        if (callback && typeof callback === "function") {
+          callback.call(this);
+        }
+      };
+      if (support.transitions) {
+        el.addEventListener(transEndEventName, onEndCallbackFn);
+      } else {
+        onEndCallbackFn();
+      }
+    },
+    // the pages wrapper
+    stack = document.querySelector(".pages-stack"),
+    // the page elements
+    pages = [].slice.call(stack.children),
+    // total number of page elements
+    pagesTotal = pages.length,
+    // index of current page
+    current = 0,
+    // menu button
+    menuCtrl = document.querySelector("button.menu-button"),
+    howItWorks = document.querySelector('#how'),
 		// the navigation wrapper
 		nav = document.querySelector('.pages-nav'),
 		// the menu nav items
@@ -92,11 +94,12 @@
 
 	// event binding
 	function initEvents() {
-		howItWorks = document.querySelector('button.menu-button'),
 
 		// menu button click
 		menuCtrl.addEventListener('click', toggleMenu);
-		howItWorks.addEventListener("click", toggleHowItWorks);
+
+		// how it works button click
+		howItWorks.addEventListener('click', toggleHowItWorks);
 
 		// navigation menu clicks
 		navItems.forEach(function(item) {
@@ -145,8 +148,10 @@
 		if ( isMenuOpen ) {
 			closeMenu();
 		} else {
-			toggleMenu()
+			openMenu();
+			isMenuOpen = true;			
 			console.log('this is how it works');
+
 			
 		}
 	}
