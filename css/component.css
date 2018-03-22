@@ -1,7 +1,6 @@
 html.js,
 .js body {
 	overflow: hidden;
-	/* overflow: scroll; */
 	height: 100vh;
 }
 

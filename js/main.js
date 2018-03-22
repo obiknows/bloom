@@ -42,13 +42,16 @@
     current = 0,
     // menu button
     menuCtrl = document.querySelector("button.menu-button"),
-    howItWorks = document.querySelector('#how'),
-		// the navigation wrapper
-		nav = document.querySelector('.pages-nav'),
-		// the menu nav items
-		navItems = [].slice.call(nav.querySelectorAll('.link--page')),
-		// check if menu is open
-		isMenuOpen = false;
+    // how it works button
+    howBtn = document.getElementById("how-btn"),
+    // the how it works link
+    howLink = document.getElementById("how-link"),
+    // the navigation wrapper
+    nav = document.querySelector(".pages-nav"),
+    // the menu nav items
+    navItems = [].slice.call(nav.querySelectorAll(".link--page")),
+    // check if menu is open
+    isMenuOpen = false;
 
 	function init() {
 		buildStack();
@@ -99,7 +102,7 @@
 		menuCtrl.addEventListener('click', toggleMenu);
 
 		// how it works button click
-		howItWorks.addEventListener('click', toggleHowItWorks);
+		howBtn.addEventListener('click', openHowItWorks);
 
 		// navigation menu clicks
 		navItems.forEach(function(item) {
@@ -144,16 +147,10 @@
 	}
 
 	// open the menu and click into how it works
-	function toggleHowItWorks() {
-		if ( isMenuOpen ) {
-			closeMenu();
-		} else {
-			openMenu();
-			isMenuOpen = true;			
-			console.log('this is how it works');
-
-			
-		}
+	function openHowItWorks() {
+		
+		openMenu();
+		howLink.click()
 	}
 
 	// opens the menu
