@@ -13,6 +13,8 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
+
+	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css" />
 	<script src="js/modernizr-custom.js"></script>
 </head>
 
@@ -20,13 +22,10 @@
 	<!-- navigation (behind the page)-->
 	<nav class="pages-nav">
 		<div class="pages-nav__item"><a class="link link--page" href="#page-home">Home</a></div>
-		<div class="pages-nav__item"><a class="clients-link link--page" href="#page-docu">Clients</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="#page-manuals">Services</a></div>
+		<div class="pages-nav__item"><a class="clients-link link--page" href="#page-clients">Clients</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-services">Services</a></div>
 		<!-- [when uncommented, theese, need 'link page' classes ] -->
-		<!-- <div class="pages-nav__item"><a class="link" href="#page-software">Software</a></div> -->
-		<!-- <div class="pages-nav__item"><a class="link" href="#page-custom">Customization &amp; Settings</a></div> -->
-		<!-- <div class="pages-nav__item"><a class="link" href="#page-training">Training</a></div> -->
-		<div class="pages-nav__item"><a class="link link--page link--faded" href="#page-buy">How it Works</a></div>
+		<div class="pages-nav__item"><a class="link link--page link--faded" href="#page-how">How it Works</a></div>
 		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-contact">Contact</a></div>
 		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-blog">About</a></div>
 		<!-- Social -->
@@ -40,7 +39,7 @@
 	<!-- /navigation-->
 	<!-- pages stack ( for the effect )-->
 	<div class="pages-stack">
-		<!-- page -->
+		<!-- 1. homepage -->
 		<div class="page" id="page-home">
 			<!-- Blueprint header -->
 			<header class="bp-header cf">
@@ -53,20 +52,37 @@
 					
 				<nav class="bp-nav">
 					<li class="po">
-						<a class="bp-bloom-button-text" href="#Home">EASY BUTTON</a>
+						<a class="bp-bloom-button-text" href="#page-how">how it works</a>
 					</li>
 				</nav>
 			</header>
 			<!-- <img class="poster" src="images/1.jpg" alt="img01" /> -->
-			<div class="poster">
-<iframe src="https://player.vimeo.com/video/180028553?color=c9ff23&title=0&byline=0&portrait=0" width="640" height="360"
+			<div >
+<iframe class="poster" src="https://player.vimeo.com/video/180028553?color=c9ff23&title=0&byline=0&portrait=0" width="640" height="360"
   frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			</div>
+
+
+			<div>
+				<!-- <article class="vh-100 dt w-100 bg-dark-pink">
+					<div class="dtc v-mid tc white ph3 ph4-l">
+						<h1 class="f6 f2-m f-subheadline-l fw6 tc">Vertically centering things in css is easy!</h1>
+					</div>
+				</article>
+			</div>
+			<div>
+				<article class="vh-100 dt w-100 bg-dark-pink">
+					<div class="dtc v-mid tc white ph3 ph4-l">
+						<h1 class="f6 f2-m f-subheadline-l fw6 tc">Vertically centering things in css is easy!</h1>
+					</div>
+				</article> -->
+			</div>
 		</div>
-		<!-- /page -->
-		<div class="page" id="page-docu">
+		<!-- /home -->
+		<!-- 2. clients page -->
+		<div class="page" id="page-clients">
 			<header class="bp-header cf">
-				<h1 class="bp-header__title">Documentation</h1>
+				<h1 class="bp-header__title">Clients</h1>
 				<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
 				<p class="info">
 					"We cannot have peace among men whose hearts find delight in killing any living creature." &mdash; Rachel Carson
@@ -74,9 +90,9 @@
 			</header>
 			<img class="poster" src="images/6.jpg" alt="img06" />
 		</div>
-		<div class="page" id="page-manuals">
+		<div class="page" id="page-services">
 			<header class="bp-header cf">
-				<h1 class="bp-header__title">Manuals</h1>
+				<h1 class="bp-header__title">Services</h1>
 				<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
 				<p class="info">
 					"When you adopt a vegan diet we make a connection, you don't go back, it is not a diet, it is a lifestyle." &mdash; Freelee Frugivore
@@ -84,6 +100,8 @@
 			</header>
 			<img class="poster" src="images/2.jpg" alt="img02" />
 		</div>
+		<!-- /clients -->
+		<!-- 3.  -->
 		<div class="page" id="page-software">
 			<header class="bp-header cf">
 				<h1 class="bp-header__title">Software &amp; Downloads</h1>
@@ -114,9 +132,9 @@
 			</header>
 			<img class="poster" src="images/5.jpg" alt="img05" />
 		</div>
-		<div class="page" id="page-buy">
+		<div class="page" id="page-how">
 			<header class="bp-header cf">
-				<h1 class="bp-header__title">Where to buy</h1>
+				<h1 class="bp-header__title">How It Works</h1>
 				<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
 				<p class="info">
 					"When people ask me why I don't eat meat or any other animal products, I say, 'Because they are unhealthy and they are the product of a violent and inhumane industry.'" &mdash;

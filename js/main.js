@@ -92,8 +92,11 @@
 
 	// event binding
 	function initEvents() {
+		howItWorks = document.querySelector('button.menu-button'),
+
 		// menu button click
 		menuCtrl.addEventListener('click', toggleMenu);
+		howItWorks.addEventListener("click", toggleHowItWorks);
 
 		// navigation menu clicks
 		navItems.forEach(function(item) {
@@ -134,6 +137,17 @@
 		else {
 			openMenu();
 			isMenuOpen = true;
+		}
+	}
+
+	// open the menu and click into how it works
+	function toggleHowItWorks() {
+		if ( isMenuOpen ) {
+			closeMenu();
+		} else {
+			toggleMenu()
+			console.log('this is how it works');
+			
 		}
 	}
 
