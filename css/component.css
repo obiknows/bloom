@@ -74,7 +74,15 @@ html.js,
 }
 
 .link {
-	font-size: 0.85em;
+	font-size: 1em;
+	font-weight: bold;
+	position: relative;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.clients-link {
+	font-size: 1.85em;
 	font-weight: bold;
 	position: relative;
 	letter-spacing: 1px;
@@ -121,7 +129,7 @@ html.js,
 }
 
 .link--page.link--faded {
-	font-size: 0.65em;
+	font-size: 0.9em;
 }
 
 .link--social {
