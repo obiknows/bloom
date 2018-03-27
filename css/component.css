@@ -4,6 +4,17 @@ html.js,
 	height: 100vh;
 }
 
+/* Backgrounds */
+#page-home {
+	background: rgba(0, 0, 0, 0) url("https://images.pexels.com/photos/845242/pexels-photo-845242.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center fixed;
+	background-size: auto auto;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
 /* Pages nav */
 
 .pages-nav {
@@ -224,7 +235,8 @@ html.js,
 .menu-button::before,
 .menu-button::after,
 .menu-button span {
-	background: #5f656f;
+	/* background: #5f656f; */
+	background: white;
 }
 
 .menu-button::before,
