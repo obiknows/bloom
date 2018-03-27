@@ -346,3 +346,31 @@ html.js,
 		margin: 1em;
 	}
 }
+/* 
+	PAGES
+*/
+
+/* About Page */
+#page-about {
+	background: firebrick;
+}
+
+.about-page-content {
+	color: olive;
+	width: fit-content;
+	height: fit-content;
+	background: #2a2b30;
+	padding: 1em;
+	font-weight: 600;
+	line-height: 1.5em;
+}
+
+/* Contact Page */
+#page-contact {
+	background: url('https://images.pexels.com/photos/929606/pexels-photo-929606.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-size: auto auto;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
