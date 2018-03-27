@@ -47,7 +47,8 @@ body {
 
 a {
 	text-decoration: none;
-	color: #5c5edc;
+	color: #cc6a60;
+	/* color: #5c5edc; */
 	outline: none;
 }
 
@@ -75,7 +76,10 @@ a:hover {
 .bp-header__desc {
 	font-size: 1.25em;
 	margin: 0.5em 0 1em;
-	padding: 0;
+	padding: 1em;
+	width: 550px;
+	background: #5c5edc;
+	color: wheat;
 }
 
 .bp-header__present {
