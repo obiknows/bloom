@@ -7,6 +7,7 @@ html.js,
 /* Backgrounds */
 #page-home {
 	background: rgba(0, 0, 0, 0) url("https://images.pexels.com/photos/845242/pexels-photo-845242.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center fixed;
+	/* background: rgba(0, 0, 0, 0) url("https://images.unsplash.com/photo-1477336229416-9d67406e73bc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1b04992a243fc3b7b1e86f4c0196eba2&auto=format&fit=crop&w=1050&q=80") no-repeat center center fixed; */
 	background-size: auto auto;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -378,6 +379,26 @@ html.js,
 /* Service Page */
 #page-services {
 	background: url('https://images.pexels.com/photos/547115/pexels-photo-547115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-size: auto auto;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* How It Works Page */
+#page-how {
+	background: url('https://images.unsplash.com/photo-1519666181024-761b3fa2acab?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1491fd7d26edeb1ab02271612ff39cd1&auto=format&fit=crop&w=2434&q=80');
+	background-size: auto auto;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* Clients Page */
+#page-clients {
+	background:rgba(0, 0, 0, 0) url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9e3cd6ce6496c9c05cbf1b6cda8be0f9&auto=format&fit=crop&w=1350&q=80');
 	background-size: auto auto;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
