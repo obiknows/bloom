@@ -1,5 +1,5 @@
-Blueprint: Page Stack Navigation
-=========
+Bloom Labs 🌺👨🏿‍🔬
+==============
 
 started from a  template for a simple page stack navigation based on the Dribbble shot by Ilya Kostin, <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a>.
 
