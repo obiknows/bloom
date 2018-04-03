@@ -382,6 +382,16 @@ html.js,
 	background-size: cover;
 }
 
+.contact-page-content {
+	color: white;
+	width: fit-content;
+	height: fit-content;
+	background: royalblue;
+	padding: 1em;
+	font-weight: 600;
+	line-height: 1.5em;
+}
+
 /* Service Page */
 #page-services {
 	background: url('https://images.pexels.com/photos/547115/pexels-photo-547115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
