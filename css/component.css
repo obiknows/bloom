@@ -353,7 +353,13 @@ html.js,
 
 /* About Page */
 #page-about {
-	background: firebrick;
+	/* background: firebrick; */
+	background: url('https://images.unsplash.com/photo-1508026042630-6363de481dfd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=07781b6a5714e2ec962047fbf9b3061c&auto=format&fit=crop&w=1050&q=80');
+	background-size: auto auto;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .about-page-content {
