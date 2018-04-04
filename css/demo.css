@@ -60,7 +60,7 @@ a:hover {
 /* Blueprint header */
 
 .bp-header {
-	padding: 9em 10vw 2em;
+	padding: 8em 14vw 2em;
 }
 
 .bp-header__title {
@@ -80,7 +80,7 @@ a:hover {
 	font-size: 1.25em;
 	margin: 0.5em 0 1em;
 	padding: 1em;
-	width: 550px;
+	max-width: 510px;
 	background: rebeccapurple;
 	/* background: #5c5edc; */
 	color: wheat;
