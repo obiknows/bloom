@@ -364,11 +364,12 @@ html.js,
 
 .about-page-content {
 	color: olive;
-	width: fit-content;
-	height: fit-content;
+	max-width: 500px;
+	/* height: fit-content; */
 	background: #2a2b30;
 	padding: 1em;
 	font-weight: 600;
+	font-size: 1.25em;
 	line-height: 1.5em;
 }
 
@@ -402,6 +403,17 @@ html.js,
 	background-size: cover;
 }
 
+.services-page-content {
+	color: cornflowerblue;
+	max-width: 500px;
+	/* height: fit-content; */
+	background: #2a2b30;
+	padding: 1em;
+	font-weight: 600;
+	font-size: 1.25em;
+	line-height: 1.5em;
+}
+
 /* How It Works Page */
 #page-how {
 	background: url('https://images.unsplash.com/photo-1519666181024-761b3fa2acab?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1491fd7d26edeb1ab02271612ff39cd1&auto=format&fit=crop&w=2434&q=80');
@@ -415,6 +427,12 @@ html.js,
 .how-page-content {
 	background: chocolate;
 	padding: 1em;
+	max-width: 500px;
+	/* height: fit-content; */
+	/* background: #2a2b30; */
+	font-weight: 600;
+	font-size: 1.25em;
+	line-height: 1.5em;
 }
 
 /* Clients Page */
@@ -425,4 +443,17 @@ html.js,
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+
+.clients-page-content {
+	/* color: cornflowerblue; */
+	color: chocolate;
+	max-width: 500px;
+	/* height: fit-content; */
+	/* background: #2a2b30; */
+	background: burlywood;
+	padding: 1em;
+	font-weight: 600;
+	font-size: 1.25em;
+	line-height: 1.5em;
 }
