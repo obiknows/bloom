@@ -81,7 +81,8 @@ a:hover {
 	margin: 0.5em 0 1em;
 	padding: 1em;
 	max-width: 510px;
-	background: rebeccapurple;
+	/* background: rebeccapurple; */
+	background: #558a34;
 	/* background: #5c5edc; */
 	color: wheat;
 }
@@ -240,7 +241,9 @@ a:hover {
 .po-border-small {
 	font-family: 'proxima-nova', 'Open Sans', Helvetica, Arial, sans-serif;
 	/* background-color: #854a5c; */
-	background-color: rgb(140, 199, 78);
+	/* background-color: rgb(140, 199, 78); */
+	background-color: #c96950;
+	/* background-color: #1eabba; */
 
 
 	/*-- Change Background Color of the Button --*/
@@ -281,7 +284,7 @@ a:hover {
 .po-small:hover,
 .po-border-big:hover,
 .po-border-small:hover {
-	background-color: rgb(104, 145, 60);
+	/* background-color: rgb(104, 145, 60); */
 	/* background-color: #663947; */
 	opacity: 1;
 }
@@ -303,5 +306,5 @@ a:hover {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	color: firebrick;
-	background: cornsilk;
+	background: powderblue;
 }

@@ -401,6 +401,7 @@ html.js,
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	overflow: auto;
 }
 
 .services-page-content {
@@ -422,6 +423,7 @@ html.js,
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	overflow: auto;
 }
 
 .how-page-content {
@@ -443,6 +445,8 @@ html.js,
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	overflow: auto;
+	overflow-y: hidden;
 }
 
 .clients-page-content {
