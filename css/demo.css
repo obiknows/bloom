@@ -63,6 +63,10 @@ a:hover {
 	padding: 8em 14vw 2em;
 }
 
+.services-header {
+	padding: 8em 10vw 2em;
+}
+
 .bp-header__title {
 	font-size: 2.925em;
 	font-weight: 700;

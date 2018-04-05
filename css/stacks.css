@@ -166,7 +166,8 @@ a:focus {
   display: block;
   flex: none;
   width: 250px;
-  margin: 1.5em 2vw;
+  margin: 1.5em 1vw;
+  /* margin: 1.5em 2vw; */
   cursor: default;
   transform-style: preserve-3d;
 }
