@@ -293,6 +293,7 @@ html.js,
 @media screen and (max-width: 60em) {
 	.info {
 		max-width: 100%;
+		margin-top: 4rem;
 	}
 	.poster {
 		position: relative;
@@ -429,6 +430,7 @@ html.js,
 .how-page-content {
 	background: chocolate;
 	padding: 1em;
+	color:  whitesmoke;
 	max-width: 500px;
 	/* height: fit-content; */
 	/* background: #2a2b30; */
@@ -453,9 +455,11 @@ html.js,
 	/* color: cornflowerblue; */
 	color: chocolate;
 	max-width: 500px;
-	/* height: fit-content; */
+	/* width:  fit-content; */
+	height: fit-content;
 	/* background: #2a2b30; */
 	background: burlywood;
+	color: white;
 	padding: 1em;
 	font-weight: 600;
 	font-size: 1.25em;
